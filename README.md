@@ -1,0 +1,3 @@
+# gettingStartedWithRspec
+
+* try Rspec
