@@ -2,8 +2,7 @@ require_relative '../lib/practice'
 
 RSpec.describe User do
   describe '#greet' do
-    let(:user) { User.new(params) }
-    let(:params) { { name: 'たろう', age: age } }
+    let(:user) { User.new(name: 'たろう', age: age) }
     subject { user.greet }
     context 'When under 12' do
       let(:age) { 12 }
