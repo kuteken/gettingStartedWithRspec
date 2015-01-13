@@ -7,15 +7,11 @@ RSpec.describe User do
     subject { user.greet }
     context 'When under 12' do
       let(:age) { 12 }
-      it 'answer Hiragana' do
-        is_expected.to eq 'ぼくはたろうだよ。'
-      end
+      it { is_expected.to eq 'ぼくはたろうだよ。' }
     end
     context 'When upper 13' do
       let(:age) { 13 }
-      it 'answer Kanji' do
-        is_expected.to eq '僕はたろうです。'
-      end
+      it { is_expected.to eq '僕はたろうです。' }
     end
   end
 end
